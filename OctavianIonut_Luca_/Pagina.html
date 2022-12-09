@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Aplicatie in Html, Css, Java</title>
+</head>
+<body>
+
+<h1>Luca Octavian Ionut</h1>
+<h4>Luca.Io.Octavian@student.utcluj.ro.</h4>
+
+  <h3>Specificatii tehnice ale statiei principale de lucru</h3>
+  
+  <table style="width:100%">
+  <tr>
+    <th>Denumire componenta</th>
+    <th>Parametri</th> 
+    <th>Producător</th>
+  </tr>
+  <tr>
+    <td>Cpu AMD A8-6410</td>
+    <td>Code name Mulins TDP 15W, 28NM, cORE VID 1.1v</td>
+    <td>Lenovo</td>
+  </tr>
+  <tr>
+    <td>Motherboard Lenovo Lancer 5b250</td>
+    <td>AMD k16 IMC, AMD KABINI FCH</td>
+    <td>Lenovo</td>
+  </tr>
+  <tr>
+    <td>GPU AMD Radeon R5 Graphics</td>
+    <td>CORE 800Mhz, size 1Gbytes</td>
+    <td>Lenovo</td>
+  </tr>
+</table>
+    
+    <h2> Structura retelei personale si accesul la internet</h2>
+   
+  <img src="schema.png" width="460" height="345">
+  
+  <h5>Caracterisiticile conexiunii la retea <h5>
+
+  <h6>a. D0-53-49-E7-90-23</h6>
+  <h6>b. 192.168.0.108</h6>
+  <h6>c. 52.43 Mbps</h6>
+  <h6>d. 34.65 Mbps</h6>  
+    
+
+<h2>Utilizarea resurselor (slideshow)</h2>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 7</div>
+  <img src="poza1.png" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 7</div>
+  <img src="poza2.png" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 7</div>
+  <img src="poza3.png" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+  <div class="mySlides fade">
+  <div class="numbertext">4 / 7</div>
+  <img src="poza4.png" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+  
+  <div class="mySlides fade">
+  <div class="numbertext">5 / 7</div>
+  <img src="poza5.png" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+  
+  <div class="mySlides fade">
+  <div class="numbertext">6 / 7</div>
+  <img src="poza6.png" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+  
+  <div class="mySlides fade">
+  <div class="numbertext">7 / 7</div>
+  <img src="poza7.png" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+  
+  
+</body>
+</html>
